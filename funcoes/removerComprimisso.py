@@ -1,0 +1,2 @@
+def removerCompromisso(calendario):
+    return

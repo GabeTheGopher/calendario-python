@@ -1,0 +1,2 @@
+def numeroCompromissos(calendario):
+    return
