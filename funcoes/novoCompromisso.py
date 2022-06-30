@@ -8,88 +8,23 @@ def novoCompromisso(calendario):
         if (mes < 1 or mes > 12):
             mes = int(input('Digite o número do mês (ex: 1): '))
 
-        if mes == 1:
+        if mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12:
             while True:
                 if dia < 1 or dia > 31:
                     dia = int(input('Digite o dia: '))
                 else:
                     break
             break
-
+        elif mes == 4 or mes == 6 or mes == 9 or mes == 11:
+            while True:
+                if dia < 1 or dia > 30:
+                    dia = int(input('Digite o dia: '))
+                else:
+                    break
+            break
         elif mes == 2:
             while True:
                 if dia < 1 or dia > 28:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-
-        elif mes == 3:
-            while True:
-                if dia < 1 or dia > 31:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 4:
-            while True:
-                if dia < 1 or dia > 30:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 5:
-            while True:
-                if dia < 1 or dia > 31:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 6:
-            while True:
-                if dia < 1 or dia > 30:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 7:
-            while True:
-                if dia < 1 or dia > 31:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 8:
-            while True:
-                if dia < 1 or dia > 31:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 9:
-            while True:
-                if dia < 1 or dia > 30:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 10:
-            while True:
-                if dia < 1 or dia > 31:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 11:
-            while True:
-                if dia < 1 or dia > 30:
-                    dia = int(input('Digite o dia: '))
-                else:
-                    break
-            break
-        elif mes == 12:
-            while True:
-                if dia < 1 or dia > 31:
                     dia = int(input('Digite o dia: '))
                 else:
                     break
