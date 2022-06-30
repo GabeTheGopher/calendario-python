@@ -36,7 +36,7 @@ while True:
         gravarAgenda(calendario)
 
     if opcoes == 6:
-        removerCompromisso(calendario)
+        calendario = removerCompromisso(calendario)
 
     if opcoes == 7:
         sleep(0.5)
