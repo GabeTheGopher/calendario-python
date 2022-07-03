@@ -14,15 +14,15 @@ def listarCompromissos(calendario):
                     values = list(c.values())
 
                     if values[0] == dia:
+                        print(
+                            f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}')
                         if len(keys) == 5:
-                            print(f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}\n{keys[4]}: {values[4]}\n')
-                        else:
-                            print(f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}\n')
+                            print(f'{keys[4]}: {values[4]}')
                     else:
                         print("Nenhum compromisso encontrado!")
             else:
                 print('Nenhum compromisso encontrado')
-            sleep(2)           
+            sleep(2)
             break
         if opcao == 'M':
             mes = int(input('Digite o número do mês (ex: 1): '))
@@ -31,12 +31,12 @@ def listarCompromissos(calendario):
                 for c in calendario:
                     keys = list(c.keys())
                     values = list(c.values())
+                    print(
+                        f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}')
                     if len(keys) == 5:
-                        print(f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}\n{keys[4]}: {values[4]}\n')
-                    else:
-                        print(f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}\n')
+                        print(f'{keys[4]}: {values[4]}')
             else:
                 print('Nenhum compromisso encontrado!')
-    
+
             sleep(2)
             break

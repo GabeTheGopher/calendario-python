@@ -1,5 +1,6 @@
 from time import sleep
 
+
 def novoCompromisso(calendario):
     sleep(0.5)
     mes = -1
@@ -29,12 +30,12 @@ def novoCompromisso(calendario):
                 else:
                     break
             break
-    
+
     compromisso = {
-            'Dia': dia,
-            'Horario':input('Digite o horário: '),
-            'Compromisso': input('Digite um nome para o compromisso: '),
-            'Local': input('Digite o Local do compromisso: ')
+        'Dia': dia,
+        'Horario': input('Digite o horário: '),
+        'Compromisso': input('Digite um nome para o compromisso: '),
+        'Local': input('Digite o Local do compromisso: ')
     }
 
     while True:
@@ -45,7 +46,6 @@ def novoCompromisso(calendario):
             break
         elif opcao == 'N':
             break
-
 
     calendario[mes-1].append(compromisso)
 

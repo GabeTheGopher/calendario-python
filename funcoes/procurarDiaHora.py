@@ -14,16 +14,14 @@ def procurarDiaHora(calendario):
                 horaValue = int(values[1].split(':')[0])
                 contador = 0
                 if values[0] == dia:
-                    if len(keys) == 5:
-                        if hora <= horaValue:
-                            print(f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}\n{keys[4]}: {values[4]}\n')
-                            contador+=1
-                    elif len(keys) == 4:
-                        if hora <= horaValue:
-                            print(f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}\n')
-                            contador+=1
-                    if contador == 1:
-                        print("Nenhum compromisso encontrado!")
+                    if hora <= horaValue:
+                        print(
+                            f'\n{keys[1]}: {values[1]}\n{keys[2]}: {values[2]}\n{keys[3]}: {values[3]}\n')
+                        contador += 1
+                        if len(keys) == 5:
+                            print(f'{keys[4]}: {values[4]}\n')
+            if contador == 0:
+                print("Nenhum compromisso encontrado!")
         else:
             print('Nenhum compromisso encontrado!')
 

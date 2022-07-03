@@ -39,6 +39,6 @@ while True:
         calendario = removerCompromisso(calendario)
 
     if opcoes == 7:
-        sleep(0.5)
         print('Tenha um bom dia :)')
+        sleep(1)
         break
